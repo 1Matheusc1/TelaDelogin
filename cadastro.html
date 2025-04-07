@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="auth-wrapper">
+      <section class="auth-box">
+        <h2 class="auth-title">Crie sua conta 🚀</h2>
+        <p class="auth-subtitle"></p>
+
+        <form id="form-cadastro" class="auth-form">
+          <label for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Seu nome de usuário"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Seu email" required />
+
+          <label for="senha-cadastro">Senha</label>
+          <div class="senha-container">
+            <input
+              type="password"
+              id="senha-cadastro"
+              placeholder="Crie uma senha"
+              required
+            />
+            <span
+              class="toggle-password"
+              onclick="toggleSenha('senha-cadastro')"
+              >👁️</span
+            >
+          </div>
+
+          <button type="submit" class="btn-auth">Cadastrar</button>
+        </form>
+
+        <div class="auth-helper">
+          <p>Já tem uma conta? <a href="index.html">Faça login</a></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

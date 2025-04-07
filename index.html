@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="auth-wrapper">
+      <section class="auth-box">
+        <h2 class="auth-title">Bem-vindo 👋</h2>
+        <p class="auth-subtitle"></p>
+
+        <form id="form-login" class="auth-form">
+          <label for="login-email">Email</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="Digite seu email"
+            required
+          />
+
+          <label for="login-senha">Senha</label>
+          <div class="senha-container">
+            <input
+              type="password"
+              id="login-senha"
+              placeholder="Digite sua senha"
+              required
+            />
+            <span class="toggle-password" onclick="toggleSenha('login-senha')"
+              >👁️</span
+            >
+          </div>
+
+          <button type="submit" class="btn-auth">Entrar</button>
+        </form>
+
+        <div class="auth-helper">
+          <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+
+        <div class="social-login">
+          <p class="or-text">Ou entre com</p>
+          <div class="icons">
+            <img
+              src="https://img.icons8.com/color/48/google-logo.png"
+              alt="Google"
+              title="Entrar com Google"
+            />
+            <img
+              src="https://img.icons8.com/color/48/facebook-new.png"
+              alt="Facebook"
+              title="Entrar com Facebook"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
